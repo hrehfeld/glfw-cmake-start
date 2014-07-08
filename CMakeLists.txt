@@ -10,10 +10,9 @@ else (OPENGL_FOUND)
 endif()
 
 
-set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "fwrwere")
-set(GLFW_BUILD_TESTS OFF CACHE BOOL "aegegherh")
-set(GLFW_BUILD_DOCS OFF CACHE BOOL "aegegherh")
-set(GLFW_INSTALL OFF CACHE BOOL "fasdfa")
+option(GLFW_BUILD_EXAMPLES "Build the GLFW example programs" OFF)
+option(GLFW_BUILD_TESTS "Build the GLFW test programs" OFF)
+option(GLFW_BUILD_DOCS "Build the GLFW documentation" OFF)
 
 add_subdirectory(ext/glfw)
 include_directories(ext/glfw/include)
